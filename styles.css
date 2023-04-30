@@ -1,0 +1,232 @@
+ /* * * * * *  for TItle Section * * * * * * * */
+ #title{
+    background-color: #000000; /*for styling id in css we must use "#"*/
+    padding:  2% 0 3.7%;
+}
+#mainlogoleft{
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:3.5rem;
+    line-height: 1.5;
+    color:rgb(255, 255, 255);
+    padding-bottom:10%;
+    padding-top:12%;
+
+}
+    
+
+
+    /*we also can edit our fluid container by our own style sheet..*/
+.container-fluid{
+    padding: 3% 15%;/*3% for bottom and top and 15% for left and right*/
+   
+
+}  
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    
+    font-size:2.5rem;/*this class is for target font-size and font-style of tindog*/
+}  
+#listforleft{
+    margin-top: 40px;
+}
+.nav-item{
+    margin-right:15%;
+     margin-bottom:12%;  /*this margin bottom is for to add little space between nav-item and i-phone(dog) photo */
+    font-size:1.2rem;
+    /****IMP CONCEPT***
+    In this margin-right work for increace spacing between contact,pricing,download
+    becuz nav-item is personalized for each of them so we increase right margin of those(pricing,contact,download)
+    so indirectly it will be increase spacing between them*/
+
+   /* and font size is for change the size of pricing,contact and download*/
+}
+#navbarSupportedContent{
+    margin-right:15%;
+    /*this id is work for to move whole pricing,contact,download from right about 20%*/
+}
+.download-button{
+    margin-right:5%;
+    /*here we create another class in button tag...in button tag we have many class
+    but we use newly created class for this purpose and add spacing b/w two button by using
+    margin concept... */
+}
+
+.title-img{
+    width:22%;
+    margin:2% 15% auto auto;
+    transform:rotate(25deg);
+    position:absolute; 
+    right:8.5%;
+
+}
+
+/* * * * * * * * * Feature 0r 2nd section of entire page * * * * * * * */
+#features{
+    padding: 10% auto 10% 15%;
+    background-color: #facd17;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+.feature-font{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+   
+}
+.feature-box{
+    text-align: center;
+    padding:7% 7% 7% 5%;/*this padding is use for reduce the width of 
+    our paragraph font becuz it is too long..*/
+}
+.feature-p{
+    color:#000000; 
+}
+.icon-feature{
+    color:#000000;
+    padding-bottom: 4%;
+}
+.icon-feature:hover{
+    color:#ffffff;}
+
+
+    h2{
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        line-height:1.5;
+        
+    }
+ 
+    /* * * * * * testimonial and carousel or to move slide * * * * * * */
+    #testimonials{
+    background-color:#000000;
+    text-align: center;
+    color:#fff;
+   
+}
+.testimonial-image{
+    border-radius:100%;
+    width:10%;
+    margin:5%;/*if we adding padding over image than adjust under its div image 
+    size so it is automatically reduced so we should use margin*/
+}
+#press{
+    background-color: #ffffff;
+    text-align:center;
+    padding-top: 10px;
+    border-bottom: 2px solid;
+    /* padding-bottom:7%;/*if we use margin here than whole div differntiate with other div.. */
+    /* to understand this try out by using margin...*/ 
+}
+
+#aub{
+    font-size: 25px;
+    left: 10px;
+}
+.press-image
+{
+    height: 30px;
+    margin:2%;/*to give space between images*/
+}
+.carousel-item{
+    padding:7% 15% 7% 15%; /*we remove padding from testimonial id bex=cuz
+    of this button also get padding and it is not perfectly match so fix button
+    place we add padding only for our content not whole testimonial
+    so button get rid of this padding and its fixed*/
+}
+
+/* * * * * * cards and pricing * * * * * * * */
+
+#pricing{
+    margin:5%;
+    text-align:center;
+}
+.pricing-row{
+    margin-top:5%;
+}
+#i1:hover{
+    color: #000000;
+}
+/* * * * * * * to change photo(iphone photo) position in mobile view * * * * * */
+ @media(max-width:1000px){
+    /* this is called media quaery break-points  it is work based on condition
+    means here if our page size is 1000px and less than 1000px than this condition become
+    true and content which is inside this media query it is execute */
+
+    /* so for min-width:500px means if our page size 500px and greater than 500px than 
+    this media query content will be excute and also we can define range for this screen  
+    means  @media(max-width:1000px) and(min-width:500px) this means if our page size is 1000 and 500
+    and in between this than this all content will be execute.... */
+
+    /* we also can define differnt type of condition */
+
+
+
+    /* here we use media query to adjust iphone photo position in title section  */
+    .title-img{
+        width: 60%;
+        position:static;
+        transform:rotate(0deg);
+        margin-left:13%;
+        padding-top:10%;
+
+    }
+    #title{
+        text-align: center;
+    }
+ }
+
+
+ /************call to action and footer section**********/
+
+  #cta{
+    background: #facd17;
+    padding:10%;
+    text-align:center;
+    color:#fff;
+  }
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size:3.5rem;
+     margin-bottom:7%;
+}
+.cta-btn{
+margin-right:2.7%;
+
+}
+#footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #facd17;
+    
+}
+.testimonial-text{
+    font-size: medium;
+}
+#timage{
+    /* size: 10px; */
+    height: 30px;
+}
+.icon-footer{
+    margin-left:1.75%;
+    padding-bottom: 1.7%;
+}
+p{
+    margin-left:1.3%
+}
+/* .icon-feature2{
+    padding-top:0px;
+} */
+.new{
+    padding-bottom:0%;
+    font-size:2.5rem;
+    text-align:center;
+
+}

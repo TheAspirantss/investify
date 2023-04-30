@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="signin.css" rel="stylesheet">
+    
+    <title>Register as Investor</title>
+    <script src="https://kit.fontawesome.com/03d69e5ca3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- <img src="images/Investify black.png"> -->
+<div class="container" id="container">
+    <!-- <img src="images/Investify black.png"> -->
+	<div class="form-container sign-up-container">
+		<form action="" method="post" id="InvestorRegisterData">
+            <img src="images/Investify black.png" id="logo">
+			<h2>Create Account as Investor</h2>
+			<div class="social-container">
+				<a href="#" class="social" id="icons"><i class="fab fa-facebook-f" ></i></a>
+				<a href="#" class="social" id="icons"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social" id="icons"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input id="invsignup1" type="text" placeholder="Name" name="fname" required/>
+			<input id="invsignup2" type="email" placeholder="Email" name="email" required/>
+			<input id="invsignup3" type="password" placeholder="Password" name="password" required/>
+			<button id="su" type="submit" onclick="window.location = 'profile_inv.html'">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+            <img src="images/Investify black.png" id="logo">
+			<h2>Sign in as Investor</h2>
+			<div class="social-container">
+				<a href="#" class="social" id="icons"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social" id="icons"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social" id="icons"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<a href=""><button id="si">Sign In</button></a>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p id="temp"> sign in to continue your investing journey with us. </p>
+				<button id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Investor!</h1>
+				<p>Welcome to the world of Investment, sign up to sky rocket your experiance as Investor.</p>
+				<button id="signUp" type="submit">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="investorRegister1.js"></script>
+<footer>
+	<p>
+		<p class="footer" id="footer">Investify &copy; 2023</p>
+	</p>
+</footer>
+</body>
+</html>
