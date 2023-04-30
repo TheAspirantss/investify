@@ -30,7 +30,7 @@
 			<input id="signup1" type="text" placeholder="Name" name="fname" required/>
 			<input id="signup2" type="email" placeholder="Email" name="email" required/>
 			<input id="signup3" type="password" placeholder="Password" name="password" required/>
-			<button id="su" type="submit" onclick="window.location = 'profile_startup.html'">Sign Up</button>
+			<button id="su" type="submit" onclick=openf()>Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
@@ -55,7 +55,7 @@
 			<div class="overlay-panel overlay-left">
 				<h1>Welcome Back!</h1>
 				<p id="temp"> sign in to continue your entrepreneurial journey with us. </p>
-				<button id="signIn" onclick="authenticationmail()">Sign In</button>
+				<button id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Enterpreneur!</h1>
@@ -73,16 +73,16 @@
 		<p class="footer" id="footer">Investify &copy; 2023</p>
 	</p>
 </footer>
-
-  <script>
-    firebase.initializeApp(firebaseConfig);
-
-    export const auth=firebase.auth();
-    export const provider=new firebase.auth.GoogleAuthProvider();
-    
-    function authenticationmail(){
-      auth.signInwithPopup(provider)
-    }
+<script>
+	function openf(){
+		var inputname=getElementVal("signup1");
+		var inputemail=getElementVal("signup2");
+		var inputpassword=getElementVal("signup3");
+		//console.log(inputname);
+		if(!(inputname=="") && !(inputemail=="") && !(inputpassword=="")){
+			window.location = 'profile_startup.html';
+		}
+	}
   </script>
 </body>
 </html>

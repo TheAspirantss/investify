@@ -27,7 +27,7 @@
 			<input id="invsignup1" type="text" placeholder="Name" name="fname" required/>
 			<input id="invsignup2" type="email" placeholder="Email" name="email" required/>
 			<input id="invsignup3" type="password" placeholder="Password" name="password" required/>
-			<button id="su" type="submit" onclick="window.location = 'profile_inv.html'">Sign Up</button>
+			<button id="su" type="submit" onclick=openf()>Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
@@ -68,5 +68,16 @@
 		<p class="footer" id="footer">Investify &copy; 2023</p>
 	</p>
 </footer>
+  <script>
+	function openf(){
+		var inputname=getElementVal("invsignup1");
+		var inputemail=getElementVal("invsignup2");
+		var inputpassword=getElementVal("invsignup3");
+		//console.log(inputname);
+		if(!(inputname=="") && !(inputemail=="") && !(inputpassword=="")){
+			window.location = 'profile_startup.html';
+		}
+	}
+  </script>
 </body>
 </html>
